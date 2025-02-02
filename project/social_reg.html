@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="social_reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="social_reg.js" defer></script>
+</head>
+<header>
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="social_media.html">Home</a>
+        <a href="Activity">Activity</a>
+        <a href="social_login.html">Login</a>
+        <a href="Audience">Audience</a>
+        <a href="Content">Content</a>
+        <a href="Reports">Reports</a>
+    </nav>
+</header>
+<body>
+    <div class="register-card">
+        <h2>Create Account</h2>
+        <form id="registerForm" action="register.php" method="POST" class="register-form">
+            <div class="form-group">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <button type="submit" class="register-button">Register</button>
+            <p id="error-message" style="color:red; text-align:center;"></p>
+            <div class="register-link">
+                <p>Already have an account? <a href="social_login.html">Login</a></p>
+            </div>
+            <div class="register-back">
+                <a href="social_media.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

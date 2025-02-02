@@ -1,0 +1,25 @@
+CREATE DATABASE social_media_analytics;
+
+USE social_media_analytics;
+
+-- Users Table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Social Media Data Table
+CREATE TABLE social_media_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    platform VARCHAR(50) NOT NULL,
+    followers INT DEFAULT 0,
+    engagement FLOAT DEFAULT 0.0,
+    posts INT DEFAULT 0,
+    reach INT DEFAULT 0,
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
