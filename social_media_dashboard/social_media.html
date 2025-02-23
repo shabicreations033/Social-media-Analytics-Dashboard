@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/social_media.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/social_media.js" defer></script>
+</head>
+<body data-page-type="dashboard">
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="audience.html">Audience</a>
+        <a href="content.html">Content</a>
+        <a href="reports.html">Reports</a>
+        <a href="social_login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a> <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+    <div class="dashboard">
+        <header>
+            <h1>Social Media Analytics</h1>
+            <p class="last-updated">Last updated: <span id="lastUpdated">Just now</span></p>
+        </header>
+
+        <div class="stats-grid" id="statsGrid">
+            <!-- Stat cards will be loaded here -->
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Growth Overview</h3>
+                <div class="chart-container"> <canvas id="growthChart"></canvas> </div>
+            </div>
+            <div class="chart-card">
+                <h3>Engagement Distribution</h3>
+                 <div class="chart-container"> <canvas id="engagementChart"></canvas> </div>
+            </div>
+            <div class="chart-card">
+                <h3>Content Breakdown</h3>
+                 <div class="chart-container"> <canvas id="contentChart"></canvas> </div>
+            </div>
+        </div>
+
+        <div class="platform-stats" id="platformStats">
+            <!-- Platform stats will be loaded here -->
+        </div>
+    </div>
+
+</body>
+</html>

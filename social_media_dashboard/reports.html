@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Social Media Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/social_media.css">
+    <link rel="stylesheet" href="css/reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/reports.js" defer></script>
+</head>
+<body data-page-type="reports">
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="audience.html">Audience</a>
+        <a href="content.html">Content</a>
+        <a href="reports.html">Reports</a>
+        <a href="social_login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a> <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+    <div class="dashboard">
+        <header>
+            <h1>Reporting</h1>
+            <p>Generate and customize reports on your social media performance.</p>
+            <p class="last-updated">Last updated: <span id="lastUpdated">Just now</span></p>
+        </header>
+        <div class="content-area">
+            <section class="report-generation">
+                <h2>Generate New Report</h2>
+                <div class="report-options">
+                    <div class="option-group">
+                        <label for="reportType">Report Type:</label>
+                        <select id="reportType">
+                            <option value="summary">Summary Report</option>
+                            <option value="engagement">Engagement Report</option>
+                            <option value="audience">Audience Growth Report</option>
+                            <option value="content">Content Performance Report</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="dateRange">Date Range:</label>
+                        <select id="dateRange">
+                            <option value="last7days">Last 7 Days</option>
+                            <option value="last30days">Last 30 Days</option>
+                            <option value="custom">Custom Range</option>
+                        </select>
+                    </div>
+                    <button class="btn">
+                         <img src="img/generate-report-icon.png" alt="Generate Report Icon" class="button-icon">
+                        Generate Report</button>
+                </div>
+                <p class="report-generation-description">Customize your report by selecting the type and date range. Click "Generate Report" to download.</p>
+            </section>
+
+            <section class="recent-reports">
+                <h2>Recent Reports</h2>
+                <ul class="report-list" id="recentReportsList">
+                    <li class="placeholder-text">Loading recent reports...</li>
+                </ul>
+                <p class="recent-reports-description">Access your recently generated reports. Click on a report to download.</p>
+            </section>
+
+            <section class="scheduled-reports">
+                <h2>Scheduled Reports</h2>
+                <p>Manage and schedule automated report generation. (Scheduling Placeholder - Future Feature)</p>
+                <div class="scheduling-placeholder" id="scheduledReportsPlaceholder">
+                    <img src="img/scheduled-reports-placeholder.png" alt="Scheduled Reports Placeholder" class="placeholder-image">
+                    [Scheduled Reports Management Placeholder] - Future Feature
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

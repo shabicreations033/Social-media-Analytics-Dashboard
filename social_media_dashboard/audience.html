@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audience - Social Media Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/social_media.css">
+    <link rel="stylesheet" href="css/audience.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/audience.js" defer></script>
+</head>
+<body data-page-type="audience">
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="audience.html">Audience</a>
+        <a href="content.html">Content</a>
+        <a href="reports.html">Reports</a>
+        <a href="social_login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a> <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+    <div class="dashboard">
+        <header>
+            <h1>Audience Insights</h1>
+            <p>Understand your audience demographics, interests, and growth.</p>
+            <p class="last-updated">Last updated: <span id="lastUpdated">Just now</span></p>
+        </header>
+        <div class="content-area">
+            <section class="audience-overview stats-grid" id="audienceOverviewStats">
+                <h2>Audience Overview</h2>
+                <div class="stat-card">
+                    <img src="img/total-followers-icon.png" alt="Total Followers Icon" class="stat-icon">
+                    <h3>Total Followers</h3>
+                    <p class="stat-value">23.4K</p>
+                    <p class="stat-trend positive">+12% last month</p>
+                </div>
+                <div class="stat-card">
+                    <img src="img/follower-growth-icon.png" alt="Follower Growth Icon" class="stat-icon">
+                    <h3>Follower Growth (Last 30 Days)</h3>
+                    <p class="stat-value">+1.2K</p>
+                    <p class="stat-trend positive">+5% growth</p>
+                </div>
+                <div class="stat-card">
+                    <img src="img/engagement-rate-icon.png" alt="Engagement Rate Icon" class="stat-icon">
+                    <h3>Audience Engagement Rate</h3>
+                    <p class="stat-value">4.3%</p>
+                    <p class="stat-trend positive">+2.1% vs last month</p>
+                </div>
+                 <div class="stat-card">
+                    <img src="img/avg-view-duration-icon.png" alt="Average View Duration Icon" class="stat-icon">
+                    <h3>Avg. View Duration</h3>
+                    <p class="stat-value">2:30 min</p>
+                    <p class="stat-trend neutral">Demo Data</p>
+                </div>
+            </section>
+
+            <section class="demographics-chart chart-card">
+                <h3>Audience Demographics (Age & Gender)</h3>
+                <div class="chart-container"> <canvas id="demographicsChart"></canvas> </div>
+                <p class="chart-description">Distribution of your audience by age and gender.</p>
+                 <img src="img/demographics-chart-explanation.png" alt="Demographics Chart Explanation" class="chart-explanation-image">
+            </section>
+
+            <section class="location-map">
+                <h2>Top Audience Locations</h2>
+                <p>Interactive map showing the geographic distribution of your audience. (Map Placeholder - Future Feature)</p>
+                <div class="map-placeholder" id="locationMapPlaceholder">
+                    <img src="img/world-map-placeholder.jpg" alt="World Map Placeholder" class="map-image">
+                    [Interactive Map Placeholder] - Future Feature
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/audience.js"></script>
+</body>
+</html>

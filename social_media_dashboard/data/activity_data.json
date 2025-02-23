@@ -1,0 +1,35 @@
+{
+    "activityFeed": [
+      {
+        "platform": "facebook",
+        "message": "User liked your Page",
+        "time": "Just now"
+      },
+      {
+        "platform": "instagram",
+        "message": "New comment on your latest post",
+        "time": "2 minutes ago"
+      },
+      {
+        "platform": "twitter",
+        "message": "Retweeted your announcement",
+        "time": "15 minutes ago"
+      },
+      {
+        "platform": "facebook",
+        "message": "Shared your event",
+        "time": "30 minutes ago"
+      },
+        {
+        "platform": "linkedin",
+        "message": "Someone viewed your profile",
+        "time": "45 minutes ago"
+      }
+    ],
+    "quickStats": {
+      "newFollowersToday": "250",
+      "mentionsLast7Days": "500",
+      "postInteractionsToday": "1200",
+      "topPostEngagement": "6.2%"
+    }
+  }

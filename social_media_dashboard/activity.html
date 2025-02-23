@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity - Social Media Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/social_media.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/activity.js" defer></script>
+</head>
+<body data-page-type="activity">
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="audience.html">Audience</a>
+        <a href="content.html">Content</a>
+        <a href="reports.html">Reports</a>
+        <a href="social_login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a> <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+    <div class="dashboard">
+        <header>
+            <h1>Activity</h1>
+            <p>Real-time updates and recent activity across your social media platforms.</p>
+            <p class="last-updated">Last updated: <span id="lastUpdated">Just now</span></p>
+        </header>
+        <div class="content-area">
+            <section class="activity-feed">
+                <h2>Recent Updates</h2>
+                <div id="activityFeedItems">
+                    <div class="activity-item">
+                        <img src="img/facebook-icon-activity.png" alt="Facebook Icon" class="platform-icon">
+                        <p><strong>Facebook:</strong> New post published - "Check out our latest blog post!" <span class="time">5 minutes ago</span></p>
+                    </div>
+                    <div class="activity-item">
+                        <img src="img/twitter-icon-activity.png" alt="Twitter Icon" class="platform-icon">
+                        <p><strong>Twitter:</strong>  @user mentioned you in a tweet. <span class="time">12 minutes ago</span></p>
+                    </div>
+                    <div class="activity-item">
+                        <img src="img/instagram-icon-activity.png" alt="Instagram Icon" class="platform-icon">
+                        <p><strong>Instagram:</strong>  Your story reached 500 views. <span class="time">30 minutes ago</span></p>
+                    </div>
+                    <div class="activity-item">
+                        <img src="img/facebook-icon-activity.png" alt="Facebook Icon" class="platform-icon">
+                        <p><strong>Facebook:</strong> 10 new likes on your recent post. <span class="time">1 hour ago</span></p>
+                    </div>
+                    <p class="placeholder-text">More activities will load here...</p>
+                </div>
+            </section>
+
+            <section class="quick-stats stats-grid">
+                <h2>Activity Quick Stats</h2>
+                <div class="stat-card">
+                    <img src="img/new-followers-icon.png" alt="New Followers Icon" class="stat-icon">
+                    <h3>New Followers (Today)</h3>
+                    <p class="stat-value">154</p>
+                    <p class="stat-trend positive">+15% vs Yesterday</p>
+                </div>
+                <div class="stat-card">
+                    <img src="img/mentions-icon.png" alt="Mentions Icon" class="stat-icon">
+                    <h3>Total Mentions (Last 7 Days)</h3>
+                    <p class="stat-value">328</p>
+                    <p class="stat-trend positive">+8% vs Previous 7 Days</p>
+                </div>
+                    <div class="stat-card">
+                    <img src="img/top-post-icon.png" alt="Top Post Icon" class="stat-icon">
+                    <h3>Top Performing Post (Today)</h3>
+                    <p class="stat-value">Blog Post Link <a href="#">View Post</a></p>
+                    <p class="stat-trend">Highest Engagement Today</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

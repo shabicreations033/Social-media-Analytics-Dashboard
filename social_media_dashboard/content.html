@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content - Social Media Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/social_media.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/content.js" defer></script>
+</head>
+<body data-page-type="content">
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="audience.html">Audience</a>
+        <a href="content.html">Content</a>
+        <a href="reports.html">Reports</a>
+        <a href="social_login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a> <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+    <div class="dashboard">
+        <header>
+            <h1>Content Performance</h1>
+            <p>Analyze and optimize your social media content strategy.</p>
+            <p class="last-updated">Last updated: <span id="lastUpdated">Just now</span></p>
+        </header>
+        <div class="content-area">
+            <section class="top-posts">
+                <h2>Top Performing Posts</h2>
+                <div class="post-list" id="topPostsList">
+                    <div class="post-item">
+                        <img src="img/blog-post-placeholder.jpg" alt="Blog Post Preview" class="post-image">
+                        <div class="post-details">
+                            <h3><a href="#">Blog Post Title - "5 Tips for..."</a></h3>
+                            <p class="post-metrics"><strong>Engagement:</strong> 4.8% | <strong>Reach:</strong> 12.5K | <strong>Likes:</strong> 540</p>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <img src="img/image-post-placeholder.jpg" alt="Image Post Preview" class="post-image">
+                        <div class="post-details">
+                            <h3><a href="#">Image Post - "Behind the Scenes..."</a></h3>
+                            <p class="post-metrics"><strong>Engagement:</strong> 5.1% | <strong>Reach:</strong> 15.3K | <strong>Likes:</strong> 680</p>
+                        </div>
+                    </div>
+                    <p class="placeholder-text">More top posts will load here...</p>
+                </div>
+            </section>
+
+            <section class="content-types-chart chart-card">
+                <h3>Content Type Performance</h3>
+                <div class="chart-container"> <canvas id="contentTypeChart"></canvas> </div>
+                <p class="chart-description">Performance comparison of different content types (e.g., Images, Videos, Links).</p>
+                 <img src="img/content-type-chart-explanation.png" alt="Content Type Chart Explanation" class="chart-explanation-image">
+            </section>
+
+            <section class="publishing-schedule">
+                <h2>Optimal Publishing Schedule</h2>
+                <p>Suggestions for the best times to publish content based on audience activity. (Schedule Placeholder - Future Feature)</p>
+                <div class="schedule-placeholder" id="schedulePlaceholder">
+                     <img src="img/publishing-schedule-placeholder.png" alt="Publishing Schedule Placeholder" class="schedule-image">
+                    [Publishing Schedule Suggestions Placeholder] - Future Feature
+                </div>
+            </section>
+        </div>
+    </div>
+     <script src="js/content.js"></script>
+</body>
+</html>

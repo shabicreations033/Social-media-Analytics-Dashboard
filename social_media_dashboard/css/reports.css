@@ -1,0 +1,168 @@
+ @import url("./social_media.css");
+
+    .report-generation {
+        background: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+    
+    .report-generation h2 {
+        margin-bottom: 1.25rem;
+        font-size: 1.75rem;
+    }
+    
+    .report-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+    
+    .option-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        min-width: 200px;
+    }
+    
+    @media (min-width: 768px) {
+        .option-group {
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    
+        .report-options {
+            flex-wrap: nowrap;
+        }
+    }
+    
+    .option-group label {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 0.25rem;
+        width: auto;
+        text-align: left;
+        min-width: 80px;
+    }
+    
+    .option-group select,
+    .report-generation button.btn {
+        padding: 0.75rem 1rem;
+        border-radius: 0.375rem;
+        border: 1px solid #e2e8f0;
+        font-size: 1rem;
+        appearance: none;
+        background-color: white;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        padding-right: 2.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .report-generation button.btn {
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        display: flex; /* Enable flexbox for icon and text */
+        align-items: center; /* Vertically align icon and text */
+        justify-content: center; /* Center content horizontally */
+        gap: 0.5rem; /* Spacing between icon and text */
+    }
+    
+    .report-generation button.btn .button-icon {
+        height: 1rem; /* Adjust icon size as needed */
+        width: auto;
+        vertical-align: middle; /* Align icon with text */
+    }
+    
+    
+    .report-generation-description,
+    .recent-reports-description,
+    .scheduled-reports p {
+        color: #64748b;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+    }
+    
+    
+    .recent-reports {
+        background: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+    
+    .recent-reports h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .report-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .report-list li {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .report-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .report-list li a {
+        text-decoration: none;
+        color: #2563eb;
+        font-weight: 500;
+        transition: color 0.2s ease-in-out;
+        display: flex; /* Use flexbox for list items */
+        align-items: center; /* Vertically center icon and text */
+        gap: 0.5rem; /* Space between icon and text */
+    }
+    
+    .report-list li a:hover {
+        color: #1e293b;
+        text-decoration: underline;
+    }
+    
+    .report-list li a::before {
+        content: '';
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #a0aec0; /* Example bullet color */
+        border-radius: 50%;
+    }
+    
+    
+    .scheduled-reports h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .scheduling-placeholder {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 150px;
+        height: 150px;
+    }
+    
+    .scheduled-reports .placeholder-image {
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        display: block;
+        object-fit: contain; /* Adjust as needed: cover, contain, etc. */
+        border-radius: 0.5rem;
+        opacity: 0.7; /* Optional: reduce opacity of placeholder image */
+    }

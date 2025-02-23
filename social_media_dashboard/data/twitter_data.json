@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "followers": "8.2K",
+    "followerTrend": "+8%",
+    "engagementRate": "4.8%",
+    "engagementTrend": "+1.8%",
+    "totalReach": "15.3K",
+    "reachTrend": "+6%",
+    "totalShares": "1.2K",
+    "sharesTrend": "+4%"
+  },
+  "platformStats": 
+    {
+      "platform": "Twitter",
+      "followers": "8.2K",
+      "engagement": "4.8%",
+      "posts": "128",
+      "reach": "15.3K"
+    },
+  "growthChartData": [
+    1100, 1250, 1380, 1500, 1650, 1800, 1950, 2100, 2250, 2400, 2550, 2700
+  ],
+  "engagementChartData": [
+    3600, 850, 1300, 2600
+  ],
+  "contentChartData": [
+    135,
+    4000,
+    800
+  ]
+}

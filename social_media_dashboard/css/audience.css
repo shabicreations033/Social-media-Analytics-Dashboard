@@ -1,0 +1,118 @@
+
+    @import url("./social_media.css");
+
+    .audience-overview h2 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .audience-overview .stat-card {
+        /* Specific styling for stat cards within the Audience Overview section */
+        background-color: #ffffff; /* White background, ensuring clarity */
+        border: 1px solid #e2e8f0; /* Subtle border for definition */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow for depth */
+        padding: 2rem; /* Increased padding for more spacious feel */
+        border-radius: 0.75rem; /* Slightly larger border radius for softer corners */
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+    }
+    
+    .audience-overview .stat-card:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+    }
+    
+    .audience-overview .stat-card h3 {
+        color: #4a5568; /* Darker, more prominent heading color */
+        font-size: 1rem; /* Slightly larger heading font size */
+        margin-bottom: 0.75rem; /* Increased margin below heading */
+    }
+    
+    .audience-overview .stat-value {
+        font-size: 2rem; /* Further increased font size for main value */
+        font-weight: 700; /* Ensure value is bold */
+        letter-spacing: -0.02em; /* Slightly reduce letter spacing for a cleaner look */
+    }
+    
+    .audience-overview .stat-trend {
+        font-size: 0.9rem; /* Slightly larger trend font size */
+        margin-top: 0.5rem; /* Add margin above trend text */
+    }
+    
+    .audience-overview .stat-icon {
+        height: 2.5rem; /* Adjust icon size in stat cards */
+        width: auto;
+        margin-bottom: 0.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .audience-overview .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust stat card width if needed */
+    }
+    
+    
+    .demographics-chart {
+        margin-bottom: 2rem;
+    }
+    
+    .demographics-chart h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .demographics-chart .chart-container {
+        height: 300px; /* Adjust height of demographics chart container if needed */
+    }
+    
+    .demographics-chart .chart-description {
+        color: #64748b;
+        font-size: 0.875rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    
+    .demographics-chart .chart-explanation-image {
+        max-width: 80%; /* Adjust as needed */
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .location-map {
+        margin-bottom: 2rem;
+    }
+    
+    .location-map h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .location-map p {
+        color: #64748b;
+        margin-bottom: 1rem;
+    }
+    
+    .map-placeholder {
+        /* You can add specific styling for the map placeholder if needed */
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 300px;
+        height: 300px;
+        border-radius: 0.5rem; /* Match card border radius */
+        overflow: hidden; /* Ensure content stays within border-radius */
+    }
+    
+    .location-map .map-image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit:inherit; /* or contain, depending on desired effect */
+        border-radius: 0.5rem;
+        opacity: 0.8; /* Optional: adjust opacity to make placeholder less prominent */
+    }

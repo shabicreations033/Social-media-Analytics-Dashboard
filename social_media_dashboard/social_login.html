@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/social_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/social_login.js" defer></script>
+</head>
+<header>
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="audience.html">Audience</a>
+        <a href="content.html">Content</a>
+        <a href="reports.html">Reports</a>
+        <a href="social_login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a> <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+</header>
+<body>
+    <div class="log">
+        <form id="loginForm" action="php/login.php" method="POST">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p id="error-message" style="color:red; text-align:center;"></p>
+            <div class="register-link">
+                <p>Don't have an account? <a href="social_reg.html">Register</a></p>
+            </div>
+            <div class="back">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+    "topPosts": [
+      {
+        "title": "Top Post Example 1 - Engaging Question",
+        "link": "#",
+        "engagement": "5.2%",
+        "reach": "14.5K",
+        "likes": "620",
+        "image": "img/placeholder-post-image.jpg"
+      },
+      {
+        "title": "Another Top Post Example -  Informative Article",
+        "link": "#",
+        "engagement": "4.9%",
+        "reach": "12.8K",
+        "likes": "580",
+        "image": "img/placeholder-post-image.jpg"
+      },
+      {
+        "title": "Third Top Post -  Behind the Scenes",
+        "link": "#",
+        "engagement": "6.1%",
+        "reach": "16K",
+        "likes": "700",
+        "image": "img/placeholder-post-image.jpg"
+      },
+      {
+        "title": "Yet Another Top Post -  Limited Time Offer",
+        "link": "#",
+        "engagement": "5.8%",
+        "reach": "15.2K",
+        "likes": "650",
+        "image": "img/placeholder-post-image.jpg"
+      }
+    ],
+    "contentTypeChartData": {
+      "labels": ["Images", "Videos", "Links", "Stories", "Live Streams"],
+      "data": [50, 25, 10, 8, 7]
+    },
+    "publishingScheduleData": {
+      "optimalTimes": ["9am-11am", "2pm-4pm", "7pm-9pm", "Lunch Time (12pm-1pm)"]
+    }
+  }

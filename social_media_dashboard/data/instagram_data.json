@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "followers": "15.3K",
+    "followerTrend": "+15%",
+    "engagementRate": "5.1%",
+    "engagementTrend": "+2.5%",
+    "totalReach": "35.8K",
+    "reachTrend": "+10%",
+    "totalShares": "1.5K",
+    "sharesTrend": "+7%"
+  },
+  "platformStats": 
+    {
+      "platform": "Instagram",
+      "followers": "15.3K",
+      "engagement": "5.1%",
+      "posts": "67",
+      "reach": "35.8K"
+    },
+  "growthChartData": [
+    1800, 1950, 2080, 2200, 2350, 2500, 2650, 2800, 2950, 3100, 3250, 3400
+  ],
+  "engagementChartData": [
+    4000, 900, 1400, 2800
+  ],
+  "contentChartData": [
+    70,
+    5200,
+    1100
+  ]
+}

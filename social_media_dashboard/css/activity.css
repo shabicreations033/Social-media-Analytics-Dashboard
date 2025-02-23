@@ -1,0 +1,92 @@
+/*  --------------------------------------------------
+    This file: css/activity.css
+    Purpose: CSS styles specific to activity.html page
+    Imports: css/social_media.css (for shared dashboard styles)
+    --------------------------------------------------  */
+    @import url("./social_media.css");
+
+    .activity-feed {
+        margin-bottom: 2rem;
+    }
+    
+    .activity-feed h2 {
+        margin-bottom: 1.25rem;
+        font-size: 1.75rem;
+    }
+    
+    .activity-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .activity-item:last-child {
+        border-bottom: none;
+    }
+    
+    .activity-item .platform-icon {
+        height: 2rem; /* Adjust icon size as needed */
+        width: auto;
+        margin-right: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .activity-item i {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+    
+    .activity-item .facebook {
+        color: #1877f2;
+    }
+    
+    .activity-item .twitter {
+        color: #1da1f2;
+    }
+    
+    .activity-item .instagram {
+        color: #e4405f;
+    }
+    
+    .activity-item .time {
+        color: #64748b;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+    }
+    
+    .quick-stats {
+        margin-bottom: 2rem;
+    }
+    
+    .quick-stats h2 {
+        margin-bottom: 1.25rem;
+        font-size: 1.75rem;
+    }
+    
+    .quick-stats .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust stat card width for quick stats if needed */
+    }
+    
+    .quick-stats .stat-card {
+        /* You can add specific styling for quick stats stat cards if needed */
+        padding: 1rem; /* Slightly less padding for quick stats cards */
+    }
+    
+    .quick-stats .stat-icon {
+        height: 2.5rem; /* Adjust icon size in stat cards */
+        width: auto;
+        margin-bottom: 0.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .placeholder-text {
+        color: #9ca3af;
+        font-style: italic;
+        text-align: center;
+        padding: 1rem 0;
+    }

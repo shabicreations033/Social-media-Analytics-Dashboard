@@ -1,0 +1,17 @@
+{
+    "audienceOverviewStats": {
+      "totalFollowers": "25.8K",
+      "followerTrendLastMonth": "+12%",
+      "followerGrowthLast30Days": "+1.5K",
+      "audienceEngagementRate": "4.8%",
+      "avgViewDuration": "2:30"
+    },
+    "demographicsChartData": {
+      "ageLabels": ["18-24", "25-34", "35-44", "45+"],
+      "maleData": [30, 45, 20, 5],
+      "femaleData": [35, 40, 15, 10]
+    },
+    "locationMapData": {
+      "topLocations": ["USA", "Canada", "UK", "Australia", "Germany"]
+    }
+  }

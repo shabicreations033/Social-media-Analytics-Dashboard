@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex; /* Ensure logo and image align properly */
+    align-items: center; /* Vertically center logo content */
+    font-size: 2rem;  /* Adjusted font size to match dashboard */
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 2rem; /* Adjust logo image height */
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 1.25rem; 
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 0; /* Added padding to match dashboard navbar */
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    padding: 7rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    margin-top: 4rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.hero-image {
+    margin-top: 3rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.features {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1e293b;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+.feature-card p {
+    color: #64748b;
+}
+
+/* Footer */
+footer {
+    background-color: #e2e8f0;
+    padding: 1rem 0;
+    text-align: center;
+    color: #64748b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

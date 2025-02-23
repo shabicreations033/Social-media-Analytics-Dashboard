@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/social_reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/profile.js" defer></script>
+</head>
+<header>
+    <div class="logo">SM</div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="activity.html">Activity</a>
+        <a href="audience.html">Audience</a>
+        <a href="content.html">Content</a>
+        <a href="reports.html">Reports</a>
+        <a href="social_login.html" id="loginLink">Login</a>
+        <a href="profile.html" id="profileLink" style="display: none;">Profile</a> <a href="#" id="logoutLink" style="display: none;">Logout</a>
+    </nav>
+</header>
+<body>
+    <div class="register-card">
+        <h2>Your Profile</h2>
+        <form id="profileForm" action="php/update_profile.php" method="POST" class="register-form">
+            <div class="form-group">
+                <input type="url" id="facebookLink" name="facebook_link" placeholder="Facebook Profile Link (Optional)">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="form-group">
+                <input type="url" id="twitterLink" name="twitter_link" placeholder="Twitter Profile Link (Optional)">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="form-group">
+                <input type="url" id="instagramLink" name="instagram_link" placeholder="Instagram Profile Link (Optional)">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <button type="submit" class="register-button">Save Profile</button>
+            <p id="profile-message" style="text-align:center; margin-top: 10px;"></p>
+            <div class="register-back">
+                <a href="social_media.html"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

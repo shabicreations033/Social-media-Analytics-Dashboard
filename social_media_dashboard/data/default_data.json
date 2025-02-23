@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "followers": "23.4K",
+    "followerTrend": "+12%",
+    "engagementRate": "4.3%",
+    "engagementTrend": "+2.1%",
+    "totalReach": "45.2K",
+    "reachTrend": "+8.5%",
+    "totalShares": "1.2K",
+    "sharesTrend": "+5.2%"
+  },
+  "platformStats": [
+    {
+      "platform": "Facebook",
+      "followers": "12.5K",
+      "engagement": "3.2%",
+      "posts": "45",
+      "reach": "25.6K"
+    },
+    {
+      "platform": "Twitter",
+      "followers": "8.2K",
+      "engagement": "4.8%",
+      "posts": "128",
+      "reach": "15.3K"
+    },
+    {
+      "platform": "Instagram",
+      "followers": "15.3K",
+      "engagement": "5.1%",
+      "posts": "67",
+      "reach": "35.8K"
+    }
+  ],
+  "growthChartData": [
+    1500, 1650, 1780, 1900, 2050, 2200, 2350, 2500, 2650, 2800, 2950, 3100
+  ],
+  "engagementChartData": [
+    3500, 800, 1200, 2500
+  ],
+  "contentChartData": [
+    55,
+    4800,
+    950
+  ]
+}

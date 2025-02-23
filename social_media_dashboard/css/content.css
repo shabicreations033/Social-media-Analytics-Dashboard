@@ -1,0 +1,130 @@
+
+    @import url("./social_media.css");
+
+    .content-area section {
+        margin-bottom: 2rem;
+    }
+    
+    .top-posts {
+        margin-bottom: 2rem;
+    }
+    
+    .top-posts h2 {
+        margin-bottom: 1.25rem;
+        font-size: 1.75rem;
+    }
+    
+    .post-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .post-item {
+        background: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .post-item:hover {
+        transform: scale(1.03);
+    }
+    
+    .post-image {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        display: block;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+    
+    .post-details {
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    
+    .post-details h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .post-details h3 a {
+        text-decoration: none;
+        color: #1e293b;
+        transition: color 0.2s ease-in-out;
+    }
+    
+    .post-details h3 a:hover {
+        color: #2563eb;
+    }
+    
+    .post-details p.post-metrics {
+        color: #64748b;
+        font-size: 0.875rem;
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+    
+    
+    .content-types-chart {
+        margin-bottom: 2rem;
+    }
+    
+    .content-types-chart h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .content-types-chart .chart-description {
+        color: #64748b;
+        font-size: 0.875rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    
+    .content-types-chart .chart-explanation-image {
+        max-width: 80%; /* Adjust as needed */
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .publishing-schedule h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .schedule-placeholder {
+        /* You can add specific styling for the publishing schedule section if needed */
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 200px;
+        height: 200px;
+    }
+    
+    .publishing-schedule .schedule-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain; /* or cover, adjust as needed */
+        border-radius: 0.5rem;
+        opacity: 0.8; /* Optional: adjust opacity to make placeholder less prominent */
+    }
